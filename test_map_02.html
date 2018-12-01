@@ -15,6 +15,17 @@
     <div id="map"></div>
     <script>
         var chiangMai = { lat: 18.7061, lng: 98.9817};
+        var map = new google.map.Map(
+            document.getElementById('map'), {
+                zoom: 4,
+                center: chiangMai
+            });
+        var marker = new google.map.Marker({
+            position: chiangMai,
+            map: map
+        });
     </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBOazX4vUa8DC2JfACmCg4Fl9nRPTIdc8&callback=initMap"></script>
   </body>
 </html>
